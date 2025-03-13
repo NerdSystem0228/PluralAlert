@@ -19,6 +19,7 @@ Linux:
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh (para instalação do uv)
 git clone https://github.com/NerdSystem0228/PluralAlert
+nano .env.example (coloque os valores necessários)
 cd PluralAlert
 uv sync
 uv run main.py
@@ -29,7 +30,7 @@ With docker:
 git clone https://github.com/NerdSystem0228/PluralAlert
 cd PluralAlert
 docker build . -t <nome do seu bot>
-nano docker-compose.yml.example (modifique com seu gosto)
+nano docker-compose.yml.example (coloque os valores necessários)
 docker-compose up -d
 ```
 
