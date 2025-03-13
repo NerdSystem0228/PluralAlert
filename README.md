@@ -12,7 +12,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `uv`
 - Você tem uma máquina `Linux, Mac e Windows não é garantido`
-- 
+
 ## ☕ Rodando PluralAlert
 
 Linux: 
