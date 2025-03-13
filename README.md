@@ -1,8 +1,42 @@
-# NerdSystem Bot
-Este bot é um bot para fazer uma integração do Simply Plural usando a API e o WebSocket provinciado por eles, para receber eventos (no caso de WebSocket)
-de quando uma alter muda de controle, e modificar algumas coisas (com a API), como o frontHistory, que dá pra fazer uma alter começar a front ou terminar de frontar.
-Com esse bot, é possível receber eventos pelo WebSocket, quando uma alter muda, e esse evento dispara um outro evento, que é o evento do bot, que manda uma mensagem
-para o nosso servidor pessoal onde pessoas podem saber quando uma entrou ou saiu do front.
-Também há comandos para sair e entrar do front, sendo dois deles são front e unfront, que vão verificar quem fez o comando e se for alguma de nós, ele vai colocar no front
-a alter que fez o comando, e os outros dois, o setalterfront e removealterfront, que serve para quando queremos manipular o front de outra que não seja ela mesma, para
-caso uma esqueça de sair do front, uma avisar e outra fazer o comando para deixar de forma organizada.
+# PluralAlert
+
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+
+<img src="imagem.png" alt="Exemplo imagem">
+
+> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- Você instalou a versão mais recente de `uv`
+- Você tem uma máquina `Linux, Mac e Windows não é garantido`
+- 
+## ☕ Rodando PluralAlert
+
+Linux: 
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh (para instalação do uv)
+git clone https://github.com/NerdSystem0228/PluralAlert
+cd PluralAlert
+uv sync
+uv run main.py
+```
+
+With docker:
+```
+git clone https://github.com/NerdSystem0228/PluralAlert
+cd PluralAlert
+docker build . -t <nome do seu bot>
+nano docker-compose.yml.example (modifique com seu gosto)
+docker-compose up -d
+```
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
